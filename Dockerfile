@@ -1,5 +1,5 @@
-FROM ruby:2.2.4
-MAINTAINER Eric McNiece <emcniece@gmail.com>
+FROM ruby:2.5
+MAINTAINER Xuyang Wang <arthraim@gmail.com>
 
 ENV CHECKOUT_ID=5f8692ef3ee19df32b7f20b169c7eca7a00a9477
 
@@ -9,7 +9,7 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends build-essen
     # for nokogiri
     libxml2-dev libxslt1-dev \
     # for capybara-webkit
-    libqt4-webkit libqt4-dev xvfb \
+    libqtwebkit4 libqt4-dev xvfb \
     python python-dev python-pip python-virtualenv \
     nodejs \
     # cleanup
